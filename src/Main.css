@@ -1,0 +1,40 @@
+
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.graph-container {
+  flex: 2; /* Adjust the flex value to make the graph larger */
+  padding: 10px; /* Optional: Add padding */
+}
+
+.bottom-row {
+  display: flex; /* Flex container to align earnings and summary side by side */
+  flex: 1; /* Take up remaining space */
+}
+
+.earnings-container {
+  flex: 1; /* Equal width for earnings container */
+  padding: 10px; /* Optional: Add padding */
+  display: flex;
+  justify-content: center;
+}
+
+.summary-container {
+  flex: 1; /* Equal width for summary container */
+  padding: 10px; /* Optional: Add padding */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* Stack sections vertically on small screens */
+  }
+  
+  .bottom-row {
+    flex-direction: column; /* Stack earnings and summary vertically on small screens */
+  }
+}
