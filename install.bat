@@ -1,2 +1,0 @@
-./installApp.bat
-./build.bat

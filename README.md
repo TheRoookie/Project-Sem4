@@ -1,9 +1,11 @@
 # Project-Sem4
 
 ## Installation -
-In the root folder
-`npm install react`
+1. In the root folder
+run installApp.bat
+2. In the root folder
+run build.bat
 
 ## To Run -
-In the root folder-
-`npm start`
+1. In the root folder
+run run.bat
