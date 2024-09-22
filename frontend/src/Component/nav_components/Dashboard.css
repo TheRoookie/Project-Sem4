@@ -1,0 +1,36 @@
+.dashCont{
+  /* margin-top: 100px; */
+  /* margin-left: px; */
+}
+
+body {
+    background-color: #f0f4fa;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  
+  .btn-custom {
+    background-color: #2f80ed;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
+  .btn-custom:hover {
+    background-color: #2a78e0;
+  }
+  
+  .progress {
+    height: 5px;
+  }
+  

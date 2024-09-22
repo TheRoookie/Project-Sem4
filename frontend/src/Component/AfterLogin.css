@@ -1,0 +1,140 @@
+.navbar-container {
+    height: 80px;
+    width: 100%;
+    background-color:  #f8f9fa;
+    color:  #343a40;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 2px;
+  }
+  
+  .navbar-title {
+    font-size: 18px;
+    margin-right: 220px;
+    color: #26394c;
+  }
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-name {
+    font-size: 16px;
+    
+  }  
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+  
+  .navbar-item {
+    margin-left: 20px;
+  }
+  
+.navbar-name{
+    margin-left: 0px;
+}
+  @media (max-width: 768px) {
+    .navbar-container {
+      padding: 0 10px;
+    }
+  
+    .navbar-title {
+      font-size: 16px;
+    }
+  
+    .navbar-item {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    .navbar-right{
+        margin-right: 50px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+    }
+  
+    .navbar-right {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: space-between;
+    }
+
+    .navbar-left {
+        width: 100%;
+        justify-content: space-between;
+      }
+  
+    .navbar-item {
+      margin-left: 0;
+      font-size: 12px;
+    }
+  }
+  .sidebar-container {
+    margin-top: 22px;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
+  
+  .sidebar-item {
+    padding: 15px 0;
+    color: #343a40;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .sidebar-item svg{
+    margin-right: 8px; 
+  font-size: 18px;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar-container {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .sidebar-container {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+  
+    .sidebar-item {
+      padding: 10px 5px;
+      font-size: 14px;
+    }
+  }
+  

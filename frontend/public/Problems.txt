@@ -1,0 +1,14 @@
+--------------Money Earning Platform---------------
+Backend----> 
+1)--------->How will a user earn Money?
+Ans-He will earn points by doing some task which can be converted into real money later
+
+2)---------->What Task?
+Ans-We can provide problem statements to users,which they can solve and earn points.(Just a suggestion) 
+
+3)----------->Problems we will face
+
+i) How will we store out users credentials in our Backend
+ii)How will we provide a problem statement to our users
+iii)By solving them he will earn some points . How are we going to give him those points?
+iv)How will we store this data (points he earned , ps he solved ) and how will we display those detaials to him? 

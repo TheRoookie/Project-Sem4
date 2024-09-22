@@ -1,0 +1,32 @@
+.summary {
+    text-align: center;
+  }
+  
+  .summary-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  @media (max-width: 768px) {
+    .dashboard-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .graph-container, .summary-container, .earnings-container {
+      grid-column: 1;
+    }
+  }
+  
+  

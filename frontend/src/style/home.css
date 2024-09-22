@@ -1,0 +1,548 @@
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+
+  .container1{
+      background-color: #f6fafd;
+  }
+  .container {
+      background-color: #f6fafd;
+      margin: 0 auto;
+      /* margin-top: 40px; */
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 500px;
+      max-width: 1200px; /* Limits the container width */
+      padding: 0 20px; /* Add padding for internal spacing */
+  }
+
+  /* .text1 {
+      /* justify-content: center; */
+  /* } */
+
+  .text1 h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      color: rgb(12, 12, 98);
+  }
+
+  .text1 p {
+      color: rgba(12, 12, 98, 0.735);
+      font-size: 1.5rem;
+      /* padding-right: 300px; */
+  }
+
+  .buttons {
+      margin-top: 100px;
+      display: flex;
+      align-items: center;
+  }
+
+  .buttons .b1 {
+      border-radius: 50px;
+      background-color: white;
+      border-color: transparent;
+      width: 180px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .buttons .b2 {
+      border-radius: 50px;
+      background-color: white;
+      border-color: transparent;
+      width: 180px;
+      height: 56px;
+      margin-left: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .text1 button img {
+      width: 100px;
+      height: 50px;
+  }
+
+  .vid1 {
+      margin-left: 50px;
+      height: 500px;
+  }
+
+  .vid1 video {
+      height: 500px;
+      width: fit-content;
+  }
+
+  /* Responsive Styles */
+
+  /* Adjustments for tablets and small laptops */
+  @media (max-width: 1024px) {
+      .container {
+          flex-direction: column; /* Stack the items vertically */
+          height: auto; /* Let the height adjust dynamically */
+      }
+      
+      .vid1, .text {
+          width: 100%; /* Make the items take up full width */
+          margin-left: 0;
+          text-align: center; /* Center text on smaller screens */
+      }
+
+      .vid1 video {
+          width: 100%; /* Make the video responsive */
+          height: auto;
+      }
+
+      .buttons {
+          justify-content: center; /* Center buttons on smaller screens */
+      }
+
+      .text h1 {
+          font-size: 3rem; /* Adjust the font size for tablets */
+      }
+
+      .text p {
+          font-size: 1.2rem; /* Reduce paragraph font size */
+      }
+  }
+
+  /* Adjustments for mobile devices */
+  @media (max-width: 768px) {
+      .container {
+          margin: 20px; /* Reduce margin on smaller devices */
+          padding: 10px; /* Add padding to prevent elements from touching screen edges */
+      }
+
+      .text1 .div1_h1 {
+          font-size: 2.5rem; /* Further reduce font size */
+      }
+
+      .text1 .div1_p {
+          font-size: 1rem;
+      }
+
+      .buttons {
+          flex-direction: column; /* Stack buttons vertically */
+          margin-top: 50px; /* Reduce margin */
+      }
+
+      .text1 .b2 {
+          margin-left: 0;
+          margin-top: 10px; /* Add margin between stacked buttons */
+      }
+
+      .vid1 video {
+          height: auto; /* Ensure video maintains its aspect ratio */
+          width: 100%; /* Scale video to fit mobile screens */
+      }
+
+      .container {
+          margin: 0 10px; /* Reduce the outer margins */
+      }
+  }
+  
+  .container2 {
+      margin: 2rem;
+    }
+    
+    /* Heading Styles */
+    .container2 h1 {
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      color: #012c6c;
+      text-align: center; /* Ensure the text is centered on all screen sizes */
+      margin: 0;
+    }
+    
+    /* Media Query for smaller screens (tablets and below) */
+    @media (max-width: 1024px) {
+      .container2 {
+        margin: 1.5rem; /* Reduce margin on smaller screens */
+      }
+    
+      .container2 h1 {
+        font-size: 2.5rem; /* Slightly smaller font size on medium screens */
+      }
+    }
+    
+    /* Media Query for mobile screens */
+    @media (max-width: 768px) {
+      .container2 {
+        margin: 1rem; /* Further reduce margin on mobile screens */
+      }
+    
+      .container2 h1 {
+        font-size: 2rem; /* Smaller font size on mobile screens */
+      }
+    }
+    
+    /* Media Query for extra small screens (e.g., very small mobile devices) */
+    @media (max-width: 480px) {
+      .container2 {
+        margin: 0
+      }}  
+
+  /*******************Container3************************/
+  .container3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      height: 100vh; /* Full viewport height */
+    }
+    
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; /* Makes the content responsive for smaller screens */
+      max-width: 1000px; /* Restricts the width of the content */
+    }
+    
+    .image-container {
+      position: relative; /* For positioning the circle behind the image */
+      margin-right: 20px;
+    }
+    
+    .image-container img {
+      max-width: 470px; /* Increased image size */
+      height: auto;
+      z-index: 1; /* Ensure the image stays on top of the circle */
+      position: relative;
+    }
+    
+    .circle {
+      position: absolute;
+      top: 80%;
+      left: 47%;
+      transform: translate(-50%, -50%); /* Center the circle behind the image */
+      width: 420px; /* Adjust size based on the image size */
+      height: 420px;
+      background-color: rgba(173, 216, 230, 0.5); /* Light blue color with 50% opacity */
+      border-radius: 50%;
+      z-index: 1; /* Circle behind the image */
+    }
+    
+    .text-content {
+      max-width: 500px;
+    }
+    
+    .text-content h2{
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #012c6c;
+    } 
+    .text-content h5{
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color:  #3171fe;
+    }
+    .text-content p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      margin: 0;
+      font-weight: 300;
+      padding-top: 8px;
+      color: #012c6c;
+    }
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column; /* Stacks image and text on top of each other */
+        text-align: center;
+      }
+    
+      .image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    
+      .text-content {
+        max-width: 100%;
+      }
+    
+      .circle {
+        width: 300px; /* Adjust circle size for smaller screens */
+        height: 300px;
+      }
+    
+      .image-container img {
+        max-width: 250px; /* Adjust image size for smaller screens */
+      }
+    }
+
+
+    /****************************************Container3-2*********************************/
+    .container3-2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      height: 70vh; /* Full viewport height */
+    }
+    
+    .content3-2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; /* Makes the content responsive for smaller screens */
+      max-width: 1000px; /* Restricts the width of the content */
+      flex-direction: row-reverse; /* Reverse the order to place image on right and text on left */
+    }
+    
+    .image-container3-2 {
+      position: relative; /* For positioning the circle behind the image */
+      margin-left: 20px; /* Adjust the margin for spacing between the image and text */
+    }
+    
+    .image-container3-2 img {
+      max-width: 470px; /* Increased image size */
+      height: auto;
+      z-index: 1; /* Ensure the image stays on top of the circle */
+      position: relative;
+    }
+    
+    .circle {
+      position: absolute;
+      top: 80%;
+      left: 47%;
+      transform: translate(-50%, -50%); /* Center the circle behind the image */
+      width: 420px; /* Adjust size based on the image size */
+      height: 420px;
+      background-color: rgba(173, 216, 230, 0.5); /* Light blue color with 50% opacity */
+      border-radius: 50%;
+      z-index: 0; /* Circle behind the image */
+    }
+    
+    .text-content3-2 {
+      max-width: 500px;
+    }
+    
+    .text-content3-2 h2 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #012c6c;
+    }
+    
+    .text-content3-2 h5 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #3171fe;
+    }
+    
+    .text-content3-2 p {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      margin: 0;
+      font-weight: 300;
+      padding-top: 8px;
+      color: #012c6c;
+    }
+    
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      .content3-2 {
+        flex-direction: column-reverse; /* Stack image and text, with image below text */
+        text-align: center;
+      }
+    
+      .image-container3-2 {
+        margin-left: 0;
+        margin-bottom: 20px;
+      }
+    
+      .text-content3-2 {
+        max-width: 100%;
+      }
+    
+      .circle {
+        width: 300px; /* Adjust circle size for smaller screens */
+        height: 300px;
+      }
+    
+      .image-container3-2  img {
+        max-width: 250px; /* Adjust image size for smaller screens */
+      }
+    }
+    /***********************Text2******************/
+  .text2{
+    margin: 80px;
+    letter-spacing: 1px;
+    height: auto;
+
+  }
+    .text2 h1{
+      font-size: 53px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #012c6c;
+
+    }
+    .text2 p{
+      padding-top: 10px;
+      font-weight: 300;
+      font-size: 30px;
+      display: flex;
+      justify-content: center;
+      color: #012c6c;
+      align-items: center;
+    }
+    
+    .container4 {
+      max-height: fit-content;
+      max-width: 100%;
+      padding: 20px;
+      color: #012c6c;
+      background-color: #f6fafd;
+      
+    }
+    
+    /* Flexbox layout for larger screens */
+    .container4 .cont4-1,
+    .container4 .cont4-2 {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+    }
+    
+    /* Image styling */
+    .container4 .cont4-1 img,
+    .container4 .cont4-2 img {
+      height: 300px;
+      max-width: 100%;
+      margin-left: 100px;
+    }
+    
+    .container4 .cont4-text1, 
+    .container4 .cont4-text2 {
+      display: block;
+      flex: 1;
+    }
+    
+    /* Heading and Paragraph Styling */
+    .text2 h3 {
+      margin-bottom: 10px;  /* Space between heading and paragraph */
+      font-size: 40px;
+      padding-top: 55px;
+      padding-left: 50px;
+      margin-top: 13px;
+      margin-left: 70px;
+    }
+    
+    .text2 p {
+      margin-top: 0;  /* Ensure no extra margin is added */
+      font-size: 1.5rem;
+      line-height: 1.6;
+      padding-top: 20px;
+      padding-left: 55px;
+      margin-right: 100px;
+      margin-left: 70px;
+    }
+    
+    /* Responsive adjustments for smaller screens */
+    @media screen and (max-width: 1024px) {
+      .container4 .cont4-1,
+      .container4 .cont4-2 {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+      }
+    
+      .container4 .cont4-1 img,
+      .container4 .cont4-2 img {
+        margin-left: 0;
+        height: auto; /* Allow images to resize */
+        max-width: 90%; /* Keep images within the screen bounds */
+      }
+    
+      h3 {
+        font-size: 2rem; /* Scale down the heading */
+        padding-left: 20px;
+        text-align: center;
+        /* margin-left: 50px; */
+      }
+    
+      p {
+        font-size: 1rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    
+    /* Further adjustments for mobile screens */
+    @media screen and (max-width: 768px) {
+      .cont4-1 h3 {
+        font-size: 1.5rem; /* Further scale down the heading */
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+      .cont4-1 p {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+      }
+    
+      .container4 .cont4-1 img,
+      .container4 .cont4-2 img {
+        height: auto; /* Adjust height on smaller screens */
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  /* ---------------------Registeration------------------------ */
+    .Register h3{
+      margin-top: 50px;
+      font-size: 50px;
+      margin-bottom: 60px;
+      color: #012c6c;
+      margin-left: 0px;
+
+    }
+    .Register button{
+      display: block;
+      margin: auto;
+      border-radius: 50px;
+      height: 60px;
+      width: auto;
+      font-size: 19px;
+      font-weight: 500;
+      color: white;
+      background-color: #3171fe;
+      padding: 0 40px;
+      border-color: transparent;
+      margin-bottom: 70px;
+    }
+    .Register button:hover{
+      background-color: blue;
+      transition: 0.5s;
+    }
+  .Register p{
+    padding: 0;
+    margin: 0;
+    margin-left:10px ;
+    color: #012c6c;
+    font-size: large ;
+    font-weight: 500;
+  }
+  .Register a{
+    text-decoration: none;
+    color: white;
+  }
